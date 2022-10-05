@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/bootstrap.js">
+</head>
+<style>
+    h1{
+        text-align: center;
+        letter-spacing: 1.5;
+        background-color: rgb(0, 111, 72);
+        color: black;
+    }
+</style>
+<body>
+       <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">My Bio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <h1>Contact Me</h1>
+
+      <form action="/results.html" method="get">
+        <div class="mb-3">
+            <label for="First" class="form-label">First Name</label>
+            <input class="form-control" type="text" placeholder="First" name = "FirstName" aria-label="default input example" required>
+        </div>
+        <div class="mb-3">
+            <label for="Last" class="form-label">Last Name</label>
+            <input class="form-control" type="text" placeholder="Last" name = "LastName" aria-label="default input example" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" name = "Email" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label" required>Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name = "Message" required></textarea>
+        </div>
+
+        <div>
+            <P>Priority</P>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="High" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              High
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Medium" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Medium
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="Low" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Low
+            </label>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+</html>
